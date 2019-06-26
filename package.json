@@ -1,0 +1,49 @@
+{
+  "name": "charisma-makeup-fs",
+  "description": "Charisma Makeup File Storage",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "UNLICENSED",
+  "private": true,
+  "author": {
+    "name": "Muhammad Hussein Fattahizadeh",
+    "email": "m@mhf.ir"
+  },
+  "scripts": {
+    "start": "nodemon",
+    "lint": "eslint .",
+    "test:cover": "jest --detectOpenHandles --runInBand --collectCoverage",
+    "test": "jest --detectOpenHandles --runInBand"
+  },
+  "jest": {
+    "testRegex": ".spec.js$",
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "coverageDirectory": "coverage",
+    "coverageReporters": [
+      "json",
+      "json-summary",
+      "text",
+      "lcov",
+      "html",
+      "clover"
+    ],
+    "testEnvironment": "node"
+  },
+  "dependencies": {
+    "fastify": "^2.6.0",
+    "fastify-cookie": "^3.0.2",
+    "fastify-formbody": "^3.1.0",
+    "fastify-multipart": "^1.0.1",
+    "fastify-oas": "^2.2.0",
+    "pump": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^5",
+    "eslint-config-airbnb-base": "^13",
+    "eslint-plugin-import": "^2",
+    "eslint-plugin-sonarjs": "^0",
+    "nodemon": "^1"
+  }
+}
